@@ -34,8 +34,7 @@ services:
   lnd:
     image: lnd
     build:
-      context: ../
-      dockerfile: docker/lnd/Dockerfile
+      context: lnd/
     environment:
       - RPCUSER
       - RPCPASS
